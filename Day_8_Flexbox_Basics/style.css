@@ -1,0 +1,132 @@
+/* 
+////// For this challenge ///////
+
+- You will have to modify the HTML
+
+- You can add new classes in the HTML
+  if you need to
+
+// Requirements
+1. The headings in the first row must be
+   a different color
+2. The two .col at the bottom must go next
+   to one another
+3. The section at the bottom should have
+   a dark background color and a different
+   color of text
+4. I've removed the "gap" that I created,
+   so you'll have to add it back in
+
+   */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+:root {
+    --dark-blue: #23424A;
+    --purple: #87629A;
+    --green: #136C72;
+    --brown: #3A3A3A;
+    --cyan: #38CFD9;
+    --font-family-roboto: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family-roboto);
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    /* display: flex => flex container */
+    display: flex;
+
+    /* can't use yet */
+    /* gap: 100px; */
+}
+
+.col {
+    /* these are now flex items */
+    width: 100%;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: var(--dark-blue);
+    color: #FFF;
+}
+
+.hero__text {
+    width: 60%;
+}
+
+.hero p {
+    margin-bottom: 3em;
+    opacity: 0.75;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: var(--dark-blue);
+    font-weight: 900;
+    background-color: var(--cyan);
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+
+.row .col {
+    text-align: center;
+}
+
+.row .col + .col {
+    margin-left: 1em;
+}
+
+.row .col h2 {
+    color: var(--purple);
+}
+
+.row .col + .col + .col p {
+    color: var(--green);
+}
+
+.bottom {
+    padding: 3em 0;
+    background-color: var(--green);
+    color: #FFF;
+}
+
+.bottom > .container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    text-align: center;
+}
+
+.col p {
+    font-size: 1.3rem;
+}
+
+.middle {
+    padding: 4em 0;
+}
