@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+:root {
+    --clr-200: #F3EED9;
+    --clr-500: #824936;
+    --clr-600: #136C72;
+    --clr-900: #222C2A;
+    --font-family-roboto: 'Roboto', sans-serif;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-roboto);
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1128px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+
+header {
+    background-color: var(--clr-600);
+    padding: 1em 0;
+    width: 100%;
+    position: fixed;
+}
+.nav {
+
+}
+.nav__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.nav__item {
+
+}
+.nav__link {
+    text-decoration: none;
+    color: #FFF;
+}
+.nav__link:hover {
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+
+.hero {
+    background-color: var(--clr-200);
+    
+}
+.hero__text {
+    margin: 0 auto;
+    max-width: 50rem;
+    min-height: 40rem;
+    text-align: center;
+}
+.hero__text p {
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.5em;
+    font-size: 1.125rem;
+}
+.hero__text h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 3.75rem;
+    color: var(--clr-500);
+    line-height: 1;
+}
+
+.main {
+    margin: 7em 0;
+}
+.main__title {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2.25rem;
+    color: var(--clr-500);
+}
+.main__text {
+    font-size: 1.3125rem;
+    color: var(--clr-900);
+
+    display: flex;
+    gap: 3em;
+}
+
+.describe {
+    padding: 5em 0;
+    color: var(--clr-200);
+    font-size: 1.3125rem;
+}
+.describe--first {
+    background-color: var(--clr-900);
+}
+.describe--second {
+    background-color: var(--clr-500);
+}
+.describe__text {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.describe__text h2 {
+    font-size: 2.25rem;
+    font-family: 'Playfair Display', sans-serif;
+}
+.describe__img {
+    width: 100%;
+}
