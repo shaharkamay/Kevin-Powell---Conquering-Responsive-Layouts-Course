@@ -60,6 +60,7 @@ body {
 }
 
 .link--button {
+    cursor: pointer;
     border: none;
     background-color: var(--clr-gold-300);
     color: var(--clr-white-100);
@@ -67,6 +68,10 @@ body {
     border-radius: 8rem;
     font-family: var(--font-title);
     font-size: inherit;
+}
+.link--button:hover,
+.link--button:focus {
+    opacity: 0.75;
 }
 
 .section__title {
@@ -131,6 +136,10 @@ header
 .nav__link {
     text-decoration: none;
     color: var(--clr-white-100);
+}
+.nav__link:hover,
+.nav__link:focus {
+    opacity: 0.75;
 }
 
 
@@ -264,6 +273,10 @@ footer
 .footer__link {
     text-decoration: none;
     color: inherit;
+}
+.footer__link:hover,
+.footer__link:focus {
+    opacity: 0.75;
 }
 
 
